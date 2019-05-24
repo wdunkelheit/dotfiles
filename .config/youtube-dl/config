@@ -1,0 +1,10 @@
+#YouTube-DL Config
+
+#-o "~/Videos/youtube/%(uploader)s/%(upload_date)s - %(title)s.%(ext)s"
+#-f bestvideo[ext=mp4]+bestaudio[ext=m4a]
+--verbose
+--ignore-errors
+--no-continue
+--no-overwrites
+--download-archive archive.txt
+

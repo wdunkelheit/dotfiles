@@ -1,0 +1,34 @@
+#!/bin/sh
+
+# Aliases that are basically scripts
+## Git alias for dotfile use
+alias config='git --git-dir="$HOME/.cfg/" --work-tree=$HOME'
+alias cgua='git --git-dir="$HOME/.cfg/" --work-tree=$HOME remote | xargs -L1 git --git-dir="$HOME/.cfg/" --work-tree=$HOME push --all'
+
+# Aliases
+## Package Management
+alias p="sudo pacman"
+alias y="yay"
+
+## Shortcut Aliases
+alias g="git"
+alias v="vim"
+alias c="clear"
+alias q="exit"
+alias :q="exit"
+
+## Extended Aliases
+alias mkdir="mkdir -pv"
+alias neofetch="clear; neofetch"
+
+## Command Aliases
+alias gua="git remote | xargs -L1 git push --all"
+
+## Colourful Aliases
+alias ls="ls -hN --color=auto --group-directories-first"
+alias la="ls -hNa --color=auto --group-directories-first"
+alias ll="ls -hNl --color=auto --group-directories-first"
+alias grep="grep --color=auto"
+
+## Python Aliases - Only if python is present on the system.
+command -v python3 > /dev/null && alias py="python3"

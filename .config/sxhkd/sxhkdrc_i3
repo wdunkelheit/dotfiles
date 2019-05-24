@@ -1,0 +1,77 @@
+################################################################
+## Simple Program Launcher Bindings
+
+# Terminal Emulator
+super + Return
+	$TERMINAL
+
+# DMENU
+super + d
+	dmenu_run
+
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
+# Screenshot Script / No-notify script.
+Print
+	screenshot.sh notify
+
+super + Print
+	flameshot gui
+#screenshot.sh
+
+super + e
+	pcmanfm
+
+# Raise Brightness
+XF86MonBrightnessUp
+	brightness.sh -u
+
+# Lower Brightness
+XF86MonBrightnessDown
+	brightness.sh -d
+
+# Raise Volume
+{XF86AudioRaiseVolume, super + shift + plus}
+	audioSuperScript.sh pulseVolumeUp
+
+# Lower Volume
+{XF86AudioLowerVolume, super + shift + minus}
+	audioSuperScript.sh pulseVolumeDown
+
+# Mute Volume
+{XF86AudioMute, super + shift + m}
+	audioSuperScript.sh pulseMute
+
+# Lock screen.
+super + x
+	lockscreen.sh lock
+
+super + shift + x
+	lockscreen.sh locksleep
+
+################################################################
+## MPD / MPC Bindings
+
+# Play / Pause MPD
+super + p
+	mpc toggle
+XF86AudioPlay
+	mpc toggle
+
+# Next song / Last song
+super + shift + greater
+	mpc next
+super + shift + less
+	mpc prev
+
+# MPD volume up / down
+#super + shift + minus
+#	mpc volume -10
+#super + shift + plus
+#	mpc volume +10
+
+## Toggle Touchpad On/Off - Thinkpad Only
+super + Insert
+	toggletouchpad.sh

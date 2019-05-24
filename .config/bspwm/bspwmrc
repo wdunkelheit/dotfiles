@@ -1,0 +1,58 @@
+#! /bin/sh
+## Launch polybar, relaunch if reloading bspwm
+$HOME/.config/polybar/launch.sh &
+
+## If sxhkd is running start other wise restart sxhkd.
+[ $(pgrep "sxhkd") ] && pkill -USR1 -x sxhkd
+[ ! $(pgrep "sxhkd") ] && sxhkd
+
+## Start workspaces.
+[ $(hostname) = "Thunderbolt" ] && bspc monitor DisplayPort-0 -d "I" "II" "III" "IV" "V" "VI" "VII" "VIII" "IX" "X" && bspc monitor DVI-D-0 -d "I" "II" "III" "IV" "V" "VI" "VII" "VIII" "IX" "X"
+[ ! $(hostname) = "Thunderbolt" ] && bspc monitor -d "I" "II" "III" "IV" "V" "VI" "VII" "VIII" "IX" "X"
+bspc dekstop -f 1
+
+## COnfigure borders, gaps, etc
+bspc config border_width		1
+bspc config window_gap			0
+bspc config normal_border_color "#81a1c1"
+bspc config focused_border_color "#a3be8c"
+bspc config presel_feedback_color "#b48ead"
+#bspc config top_padding			24
+
+## Mouse cursor select window focus.
+bspc config focus_follows_pointer false
+
+## Don't follow to workspace on launch.
+bspc config ignore_ewmh_focus true
+
+## etc
+bspc config split_ratio          0.50
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+
+## Window rules
+# Editor
+bspc rule -a code-oss desktop='^1'
+bspc rule -a Emacs desktop='^1' state="tiled"
+
+# Browsers
+bspc rule -a firefox desktop='^3'
+bspc rule -a Brave-browser desktop='^3' follow=false
+
+# Chat Clients
+bspc rule -a TelegramDesktop desktop='^4'
+bspc rule -a Slack desktop='^4'
+
+# Office Software
+bspc rule -a libreoffice-calc desktop='^5'			# Spreadsheets
+bspc rule -a libreoffice-impress desktop='^5'		# Powerpoints
+bspc rule -a libreoffice-writer desktop='^5'		# Documents
+bspc rule -a libreoffice-math desktop='^5'			# Mathematics
+bspc rule -a libreoffice-startcenter desktop='^5'	# Launcher
+
+# Steam
+bspc rule -a Steam desktop="^9"
+
+# bspc rule -a Screenkey manage=off
+
