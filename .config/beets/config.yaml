@@ -1,0 +1,20 @@
+# Directories
+directory: /media/music
+library: ~/.config/beets/musiclibrary.db
+
+#Plugins
+plugins: fetchart lastgenre mpdupdate mpdstats inline
+
+#Settings
+import:
+  #    copy: yes
+    move: yes
+    write: yes
+
+mpd:
+    host: localhost
+    port: 6600
+
+paths:
+    default: tosort/$albumartist/$album%aunique{}/$track $title
+    multidisc: 1 if disctotal > 1 else 0

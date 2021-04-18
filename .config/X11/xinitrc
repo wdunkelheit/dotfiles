@@ -1,0 +1,47 @@
+#!/bin/sh
+
+### Monitor setup.
+#[ $(hostname) = "Thunderbolt" ] && xrandr --output DisplayPort-0 --primary --scale ".5x.5" && xrandr --output DVI-D-0 --left-of DisplayPort-0 && xrandr --output DVI-D-0 --rotate left
+#[ $(hostname) = "Thunderbolt" ] && xrandr --output DisplayPort-0 --primary --scale 0.5 && xrandr --output DVI-D-0 --left-of DisplayPort-0 --rotate left
+
+## Keyboard and input settings / config
+# Set keyboard layout to English-GB/UK
+setxkbmap -layout gb
+
+## Cheeky way to get monitor only until KVM switch and dock arrive
+[ $(hostname) = "Arch-T440p" ] && xrandr | grep "HDMI-1 connected" && xrandr --output HDMI-1 --primary --mode 1920x1080 --rate 60 && xrandr --output eDP-1 --off
+
+# Load xrdb with values.
+xrdb -merge $XDG_CONFIG_HOME/X11/Xdefaults
+
+# Set keboard delay / rate:
+xset r rate 280 40
+
+# Load Xmodmap settings. Change capslock to esc.
+[ -f "$XDG_CONFIG_HOME/X11/Xmodmap" ] && xmodmap "$XDG_CONFIG_HOME/X11/Xmodmap" && xmodmap -e 'clear lock'
+
+## Launch daemons, rendering tools and applets.
+# Keys, tools and settings applets.
+sxhkd &
+nm-applet &
+blueman-applet &
+mullvad-vpn &
+syncthing &
+
+# Desktop related
+picom &
+unclutter &
+setbg.sh -w &
+dunst &
+flameshot &
+
+# Music
+[ ! $(pgrep mpd) ] && mpd
+
+# Keys, I forgot why I needed this so commented until issues arise
+# eval $(/usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh)
+# export $(gnome-keyring-daemon --start --components=pkcs11,secrets,ssh,gpg)
+# dbus-update-activation-environment --systemd DISPLAY
+
+# Run window manager.
+exec bspwm

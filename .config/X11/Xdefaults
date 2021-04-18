@@ -1,0 +1,30 @@
+!!Universal Settings
+*.font: monospace:size=12:antialias=true;
+!!*.alpha: 1
+
+st.alpha: 1
+!! Xft font rendering config
+!!Xft.dpi: 192
+!!Xft.dpi: 144
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.autohint: true
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcddefault
+
+! Black color that will not be affected by bold highlighting.
+*.color66: #120d20
+*color66:  #120d20
+
+! Import Theme
+#include "themes/nord"
+
+! Xclock colors.
+XClock*foreground: #a3c3e2
+XClock*background: #120d20
+XClock*majorColor:  rgba:a3/c3/e2/ff
+XClock*minorColor:  rgba:a3/c3/e2/ff
+XClock*hourColor:   rgba:a3/c3/e2/ff
+XClock*minuteColor: rgba:a3/c3/e2/ff
+XClock*secondColor: rgba:a3/c3/e2/ff
