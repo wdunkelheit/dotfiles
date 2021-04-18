@@ -43,5 +43,8 @@ flameshot &
 # export $(gnome-keyring-daemon --start --components=pkcs11,secrets,ssh,gpg)
 # dbus-update-activation-environment --systemd DISPLAY
 
+# Daemonise pcmanfm with dbus enabled featureset.
+dbus-launch pcmanfm -d &
+
 # Run window manager.
 exec bspwm
