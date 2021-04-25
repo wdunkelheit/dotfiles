@@ -1,3 +1,4 @@
+acpi_call
 acpilight
 alacritty
 alsa-utils
@@ -114,11 +115,10 @@ papirus-icon-theme
 patch
 pcmanfm-gtk3
 picom
+pipewire-pulse
 pkgconf
 polybar
-pulseaudio
 pulseaudio-alsa
-pulseaudio-bluetooth
 python-pip
 python-pywal
 qemu
@@ -143,6 +143,7 @@ telegram-desktop
 texinfo
 tig
 tlp
+tlp-runit
 tmux
 ttf-hack
 ttf-inconsolata
