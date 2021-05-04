@@ -13,7 +13,7 @@ export LANG=en_GB.UTF-8
 export LC_ALL=en_GB.UTF-8
 
 # Declare software defaults.
-export TERMINAL="alacritty"
+export TERMINAL="st"
 export EDITOR="vim"
 export BROWSER="brave"
 export READER="zathura"
