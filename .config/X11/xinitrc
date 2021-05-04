@@ -11,6 +11,9 @@ setxkbmap -layout gb
 ## Cheeky way to get monitor only until KVM switch and dock arrive
 [ $(hostname) = "artix-t440p" ] && xrandr | grep "HDMI-1 connected" && xrandr --output HDMI-1 --primary --mode 1920x1080 --rate 60 && xrandr --output eDP-1 --off
 
+# Start dbus daemon
+dbus-daemon --session --address="unix:path=$XDG_RUNTIME_DIR/bus" &
+
 # Load xrdb with values.
 xrdb -merge $XDG_CONFIG_HOME/X11/Xdefaults
 
@@ -44,7 +47,7 @@ flameshot &
 # dbus-update-activation-environment --systemd DISPLAY
 
 # Daemonise pcmanfm with dbus enabled featureset.
-dbus-launch pcmanfm -d &
+#dbus-launch pcmanfm -d &
 
 # Run window manager.
 exec bspwm
