@@ -31,6 +31,9 @@ blueman-applet &
 mullvad-vpn &
 pipewire & pipewire-pulse & pipewire-media-session &
 
+# Monero node
+monerod --detach --prune-blockchain --check-updates disabled --non-interactive --max-concurrency 2 &
+
 # Desktop related
 picom &
 unclutter &
