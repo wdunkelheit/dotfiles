@@ -28,6 +28,7 @@ docker-compose
 dosfstools
 dunst
 efibootmgr
+element-desktop
 elogind-runit
 emacs
 esysusers
