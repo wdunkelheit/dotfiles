@@ -1,15 +1,12 @@
 #!/bin/sh
 
-### Monitor setup.
-#[ $(hostname) = "Thunderbolt" ] && xrandr --output DisplayPort-0 --primary --scale ".5x.5" && xrandr --output DVI-D-0 --left-of DisplayPort-0 && xrandr --output DVI-D-0 --rotate left
-#[ $(hostname) = "Thunderbolt" ] && xrandr --output DisplayPort-0 --primary --scale 0.5 && xrandr --output DVI-D-0 --left-of DisplayPort-0 --rotate left
+## Display config per device
+# Check if HDMI is used, if so then disable laptop display and use HDMI at 1080p.
+[ $(hostname) = "artixT440p" ] && xrandr | grep "HDMI-1 connected" && xrandr --output HDMI-1 --primary --mode 1920x1080 --rate 60 && xrandr --output eDP-1 --off
 
 ## Keyboard and input settings / config
 # Set keyboard layout to English-GB/UK
 setxkbmap -layout gb
-
-## Cheeky way to get monitor only until KVM switch and dock arrive
-[ $(hostname) = "artix-t440p" ] && xrandr | grep "HDMI-1 connected" && xrandr --output HDMI-1 --primary --mode 1920x1080 --rate 60 && xrandr --output eDP-1 --off
 
 # Start dbus daemon
 dbus-daemon --session --address="unix:path=$XDG_RUNTIME_DIR/bus" &
@@ -19,9 +16,6 @@ xrdb -merge $XDG_CONFIG_HOME/X11/Xdefaults
 
 # Set keboard delay / rate:
 xset r rate 280 40
-
-# Load Xmodmap settings. Change capslock to esc.
-[ -f "$XDG_CONFIG_HOME/X11/Xmodmap" ] && xmodmap "$XDG_CONFIG_HOME/X11/Xmodmap" && xmodmap -e 'clear lock'
 
 ## Launch daemons, rendering tools and applets.
 # Keys, tools and settings applets.
