@@ -22,9 +22,7 @@ batteryCharging = #a3be8c
 alert = #bd2c40
 
 [bar/mybar]
-;monitor = ${env:MONITOR:DisplayPort-0}
-
-bottom = false
+bottom = true
 
 enable-ipc = true
 width = 100%
@@ -54,32 +52,15 @@ modules-left = bspwm
 modules-center = mpd capslock
 modules-right = filesystem backlight-acpi pulseaudio pacman-updates bitcoin xmr xkeyboard memory cpu wlan eth battery date powermenu
 
-
 tray-position = right
 tray-padding = 2 
 
 wm-restack = bspwm
-;wm-restack = i3
 
 ;override-redirect = true
 
 cursor-click = pointer
 cursor-scroll = ns-resize
-
-[bar/monitor]
-inherit = bar/mybar
-
-height = 36
-font-0 = Hack:pixelsize=16;1
-font-1 = Noto Color Emoji:scale=6:style=Regular;2
-
-[bar/mainbar]
-inherit = bar/mybar
-monitor = ${env:MONITOR:DisplayPort-0}
-
-[bar/secbar]
-inherit = bar/mybar
-monitor = ${env:MONITOR:DVI-D-0}
 
 [module/xwindow]
 type = internal/xwindow
@@ -119,7 +100,6 @@ label-unmounted-foreground = ${colors.foreground-alt}
 
 [module/bspwm]
 type = internal/bspwm
-
 pin-workspaces = true
 
 label-focused = %name%
