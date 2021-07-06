@@ -22,7 +22,7 @@ batteryCharging = #a3be8c
 alert = #bd2c40
 
 [bar/mybar]
-bottom = true
+bottom = false
 
 enable-ipc = true
 width = 100%
