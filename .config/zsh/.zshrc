@@ -1,8 +1,15 @@
 # .zshrc
 
+# Load the git-prompt.sh module
+source $XDG_CONFIG_HOME/zsh/git-prompt.sh
+
 # Enable colours and set the prompt
 autoload -U colors && colors
-PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+setopt PROMPT_SUBST
+PS1='%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~$fg[green]%{$(__git_ps1 " (%s)")$fg[red]%}]%{$reset_color%}$%b '
+
+# No Git prompt
+#PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
 # Large terminal entry History
 HISTSIZE=20000 
