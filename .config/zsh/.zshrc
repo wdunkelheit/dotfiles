@@ -3,7 +3,7 @@
 # Enable colours and set the prompt
 autoload -U colors && colors
 setopt PROMPT_SUBST
-PS1="%B%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$reset_color%}$%b "
+PS1="%B%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M%{$reset_color%}:%{$fg[magenta]%}%~%{$reset_color%}$%b "
 
 # Large terminal entry History
 HISTSIZE=20000 
