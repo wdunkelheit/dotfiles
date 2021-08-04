@@ -39,9 +39,9 @@ flameshot &
 [ ! $(pgrep mpd) ] && mpd
 
 # Keys, I forgot why I needed this so commented until issues arise
-# eval $(/usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh)
-# export $(gnome-keyring-daemon --start --components=pkcs11,secrets,ssh,gpg)
-# dbus-update-activation-environment --systemd DISPLAY
+eval $(/usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh)
+export $(gnome-keyring-daemon --start --components=pkcs11,secrets,ssh,gpg)
+dbus-update-activation-environment --systemd DISPLAY
 
 # Daemonise pcmanfm with dbus enabled featureset.
 #dbus-launch pcmanfm -d &
