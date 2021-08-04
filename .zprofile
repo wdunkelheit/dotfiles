@@ -26,7 +26,7 @@ export XDG_CACHE_HOME="$HOME/.cache"
 # Config directories.
 export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc-2.0"
 export XAUTHORITY="$XDG_DATA_HOME/Xauthority"
-export XINITRC="$XDG_CONFIG_HOME/X11/xinitrc"
+export XINITRC="$XDG_CONFIG_HOME/x11/xinitrc"
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 
 # Programming Languages

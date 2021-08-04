@@ -12,7 +12,7 @@ setxkbmap -layout gb
 dbus-daemon --session --address="unix:path=$XDG_RUNTIME_DIR/bus" &
 
 # Load xrdb with values.
-xrdb -merge $XDG_CONFIG_HOME/X11/Xdefaults
+xrdb -merge $XDG_CONFIG_HOME/x11/Xdefaults
 
 # Set keboard delay / rate:
 xset r rate 280 40
