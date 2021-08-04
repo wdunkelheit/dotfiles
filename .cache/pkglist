@@ -184,6 +184,7 @@ wget
 which
 wireguard-tools
 wpa_supplicant
+xclip
 xdg-user-dirs
 xdg-utils
 xfsprogs

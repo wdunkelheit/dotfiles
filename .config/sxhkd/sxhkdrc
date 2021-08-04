@@ -17,6 +17,10 @@ super + shift + d
 super + Escape
 	pkill -USR1 -x sxhkd
 
+# Emojis via dmenu
+super + semicolon
+	dmenu-emoji
+
 # Screenshot Script / No-notify script.
 Print
 	maim "$HOME/pics/screenshots/screenshot-$(date '+%Y.%m.%d-%H:%M:%S').png" && notify-send "Screenshot saved" "$HOME/pics/screenshots/..."
