@@ -48,3 +48,4 @@ dbus-update-activation-environment --systemd DISPLAY
 
 # Run window manager.
 exec bspwm
+
