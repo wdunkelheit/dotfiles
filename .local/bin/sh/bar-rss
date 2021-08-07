@@ -6,6 +6,11 @@ notify-send "🔔 RSS syncing..."
 
 newsboat -x reload
 
+while [ $(pgrep newsboat) ]
+do
+	sleep 1
+done
+
 unread="$(newsboat -x print-unread 2>/dev/null | cut -d " " -f1)"
 
 echo "$unread"

@@ -51,6 +51,7 @@ findutils
 firefox
 flameshot
 flex
+gajim
 gawk
 gcc
 gedit
@@ -91,6 +92,7 @@ linux-firmware
 linux-headers
 lvm2
 lxappearance
+lynx
 m4
 maim
 make
@@ -140,6 +142,9 @@ pkgconf
 polybar
 profanity
 pulseaudio-alsa
+python-axolotl
+python-gnupg
+python-gpgme
 python-pip
 python-pywal
 python-qrcode
