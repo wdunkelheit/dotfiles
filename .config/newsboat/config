@@ -2,8 +2,8 @@
 auto-reload yes
 
 # Enable notifications
-notify-always yes
-notify-program notify-send
+#notify-always yes
+#notify-program notify-send
 
 # Set browser
 external-url-viewer "urlscan -dc -r '$BROWSER {}'"

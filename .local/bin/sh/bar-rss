@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Syncs RSS feeds then reports new articles in bar and notification
+
+notify-send "🔔 RSS syncing..."
+
+newsboat -x reload
+
+unread="$(newsboat -x print-unread 2>/dev/null | cut -d " " -f1)"
+
+echo "$unread"
+
+notify-send "🔔 RSS synced" "$unread new articles"
+
