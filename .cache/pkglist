@@ -77,6 +77,7 @@ inetutils
 inkscape
 intel-ucode
 iptables-nft
+isync
 jfsutils
 jre8-openjdk
 keepassxc
@@ -101,12 +102,14 @@ monero-gui
 mpc
 mpd
 mpv
+msmtp
 mtools
 mumble
 nano
 ncmpcpp
 nemo
 neofetch
+neomutt
 neovim
 net-tools
 network-manager-applet
@@ -128,6 +131,7 @@ pacman
 pacman-contrib
 pamixer
 papirus-icon-theme
+pass
 patch
 pcmanfm-gtk3
 picom
