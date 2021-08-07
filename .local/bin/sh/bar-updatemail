@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Syncs mail then reports new mails in bar and notification
+
+notify-send "📬 Syncing mail"
+
+mailsync >/dev/null 2>&1
+
+unread="$(find "${XDG_DATA_HOME:-$HOME/.local/share}"/mail/*/[Ii][Nn][Bb][Oo][Xx]/new/* -type f 2>/dev/null | wc -l 2>/dev/null)"
+
+echo "$unread"
+
+notify-send "📬 Mail synced" "$unread unread mails"
