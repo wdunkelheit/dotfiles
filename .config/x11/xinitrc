@@ -15,7 +15,7 @@ dbus-daemon --session --address="unix:path=$XDG_RUNTIME_DIR/bus" &
 xrdb -merge $XDG_CONFIG_HOME/x11/Xdefaults
 
 # Set keboard delay / rate:
-xset r rate 280 40
+xset r rate 240 40
 
 ## Launch daemons, rendering tools and applets.
 # Keys, tools and settings applets.
@@ -38,10 +38,10 @@ flameshot &
 # Music
 [ ! $(pgrep mpd) ] && mpd
 
-# Keys, I forgot why I needed this so commented until issues arise
+# Keys
 eval $(/usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh)
 export $(gnome-keyring-daemon --start --components=pkcs11,secrets,ssh,gpg)
-dbus-update-activation-environment --systemd DISPLAY
+dbus-update-activation-environment -all
 
 # Daemonise pcmanfm with dbus enabled featureset.
 #dbus-launch pcmanfm -d &
