@@ -8,6 +8,13 @@ auto-reload yes
 # Set browser
 external-url-viewer "urlscan -dc -r '$BROWSER {}'"
 
+# Sort feed by name
+feed-sort-order firsttag
+
+# Formatting
+feedlist-format "%4i    [%T] %t %u"
+articlelist-format "%4i    [%D] %f  %t"
+
 # Keybinds
 bind-key j down
 bind-key k up
@@ -21,6 +28,8 @@ bind-key q quit
 bind-key n next-unread
 bind-key N prev-unread
 bind-key U show-urls
+bind-key T toggle-article-read
+bind-key z sort
 
 # Browser stuff
 browser $BROWSER
