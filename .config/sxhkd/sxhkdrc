@@ -55,7 +55,8 @@ XF86MonBrightnessDown
 
 # Lock screen.
 super + x
-	i3lock --image ~/.config/lockscreen.png
+	slock -i $HOME/.config/lockscreen.png
+	#i3lock --image ~/.config/lockscreen.png
 
 super + shift + x
 	i3lock --image ~/.config/lockscreen.png && sleep 5 && xset dpms force off
