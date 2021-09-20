@@ -13,9 +13,9 @@ export LANG=en_GB.UTF-8
 export LC_ALL=en_GB.UTF-8
 
 # Declare software defaults.
-export TERMINAL="st"
+export TERMINAL="terminator"
 export EDITOR="vim"
-export BROWSER="brave"
+export BROWSER="librewolf"
 export READER="zathura"
 
 # XDG defaults

@@ -1,5 +1,5 @@
 !!Universal Settings
-*.font: monospace:size=12:antialias=true;
+*.font: Monospace:size=12:antialias=true;
 !!*.alpha: 1
 
 st.alpha: 1

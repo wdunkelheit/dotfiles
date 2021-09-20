@@ -1,12 +1,29 @@
 [Default Applications]
-x-scheme-handler/http=brave.desktop;
-x-scheme-handler/https=brave.desktop;
+x-scheme-handler/http=librewolf.desktop
+x-scheme-handler/https=librewolf.desktop
 inode/directory=pcmanfm.desktop
 video/mp4=mpv.desktop
 video/mkv=mpv.desktop
 image/png=sxiv.desktop
 image/jpeg=sxiv.desktop
-text/html=brave.desktop
+text/html=librewolf.desktop
 application/pdf=zathura.desktop
+x-scheme-handler/chrome=librewolf.desktop
+application/x-extension-htm=librewolf.desktop
+application/x-extension-html=librewolf.desktop
+application/x-extension-shtml=librewolf.desktop
+application/xhtml+xml=librewolf.desktop
+application/x-extension-xhtml=librewolf.desktop
+application/x-extension-xht=librewolf.desktop
 
 [Added Associations]
+x-scheme-handler/http=librewolf.desktop;
+x-scheme-handler/https=librewolf.desktop;
+x-scheme-handler/chrome=librewolf.desktop;
+text/html=librewolf.desktop;
+application/x-extension-htm=librewolf.desktop;
+application/x-extension-html=librewolf.desktop;
+application/x-extension-shtml=librewolf.desktop;
+application/xhtml+xml=librewolf.desktop;
+application/x-extension-xhtml=librewolf.desktop;
+application/x-extension-xht=librewolf.desktop;
