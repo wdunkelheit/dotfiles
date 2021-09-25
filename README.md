@@ -10,9 +10,6 @@ Description
 
 ## TODO:
 * Minimalise everything
-* Suckless Applications
-	* Configure and build dwm
-	* Configure and build st
 
 Thanks to:
 ======
