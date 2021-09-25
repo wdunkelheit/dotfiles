@@ -17,6 +17,7 @@
   paste = <Alt>v
   toggle_scrollbar = <Primary>asciitilde
   new_terminator = <Super>3
+  layout_launcher = None
 [profiles]
   [[default]]
     background_color = "#2e3440"

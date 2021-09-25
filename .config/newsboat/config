@@ -1,5 +1,5 @@
-# Reload feeds every 5 minutes
-auto-reload yes
+# Reload feeds on launch
+auto-reload no
 
 # Enable notifications
 #notify-always yes
