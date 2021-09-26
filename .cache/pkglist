@@ -70,9 +70,6 @@ gzip
 htop
 hugo
 hunspell-en_gb
-i3-gaps
-i3lock
-i3status
 imlib2
 inetutils
 inkscape
@@ -109,7 +106,6 @@ mtools
 mumble
 nano
 ncmpcpp
-nemo
 neofetch
 neomutt
 neovim
@@ -167,6 +163,7 @@ sudo
 sxhkd
 sxiv
 telegram-desktop
+terminator
 texinfo
 tig
 tlp
