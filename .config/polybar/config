@@ -402,7 +402,7 @@ format-underline = #ffd700
 [module/mutt]
 type = custom/script
 exec = bar-updatemail
-;interval = 86400
+interval = 86400
 format-foreground = ${colors.foreground-alt}
 format-prefix = "📧 "
 format-underline = #ff00aa
