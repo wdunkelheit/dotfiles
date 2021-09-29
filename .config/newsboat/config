@@ -9,7 +9,7 @@ auto-reload no
 external-url-viewer "urlscan -dc -r '$BROWSER {}'"
 
 # Sort feed by name
-feed-sort-order firsttag
+feed-sort-order title
 
 # Formatting
 feedlist-format "%4i    [%T] %t %u"
@@ -30,6 +30,7 @@ bind-key N prev-unread
 bind-key U show-urls
 bind-key T toggle-article-read
 bind-key z sort
+bind-key Z rev-sort
 
 # Browser stuff
 browser $BROWSER
