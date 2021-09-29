@@ -1,12 +1,6 @@
 dotfiles
 ======
 
-Installation
-======
-```
-git clone --bare https://gitlab.com/wdunkelheit/dotfiles $HOME/.local/dotfiles
-```
-
 Description
 ======
 * Configuration files used by me on my Arch Linux systems. Containing my custom aliases, environment variables and other config files for software such as urxvt, bspwm and youtube-dl.
