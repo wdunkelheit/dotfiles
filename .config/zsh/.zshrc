@@ -55,8 +55,8 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 ## Aliases that are basically scripts
 ### Git alias for dotfile use
-alias config='git --git-dir="$HOME/.cfg/" --work-tree=$HOME'
-alias cgua='git --git-dir="$HOME/.cfg/" --work-tree=$HOME remote | xargs -L1 git --git-dir="$HOME/.cfg/" --work-tree=$HOME push --all'
+alias dotfiles='git --git-dir="$HOME/.local/dotfiles/" --work-tree=$HOME'
+alias dgua='git --git-dir="$HOME/.local/dotfiles/" --work-tree=$HOME remote | xargs -L1 git --git-dir="$HOME/.local/dotfiles/" --work-tree=$HOME push --all'
 
 # Aliases
 ## Package Management
