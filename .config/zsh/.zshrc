@@ -73,7 +73,6 @@ alias :q="exit"
 ## Extended Aliases
 alias mkdir="mkdir -pv"
 alias neofetch="clear; neofetch"
-alias notes="vim $HOME/notes.txt"
 
 ## Startup Aliases
 alias startx="startx $XINITRC"
