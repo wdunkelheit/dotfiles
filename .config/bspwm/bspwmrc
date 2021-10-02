@@ -7,7 +7,7 @@ $HOME/.config/polybar/launch.sh &
 #[ ! $(pgrep "sxhkd") ] && sxhkd
 
 ## Start workspaces.
-bspc monitor -d "WWW" "DEV" "SYS" "CHAT" "DOC" "MISC" "GFX" "SONG" "GAME" "MISC"
+bspc monitor -d "1" "2" "3" "4" "5" "6" "7" "8" "9" "0"
 bspc dekstop -f 1
 
 ## COnfigure borders, gaps, etc

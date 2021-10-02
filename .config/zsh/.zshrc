@@ -1,6 +1,7 @@
 # .zshrc
 
 # Enable colours and set the prompt
+export TERM="xterm-256color"
 autoload -U colors && colors
 setopt PROMPT_SUBST
 PS1="%B%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M%{$reset_color%}:%{$fg[magenta]%}%~%{$reset_color%}$%b "
