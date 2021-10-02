@@ -55,10 +55,10 @@ XF86MonBrightnessDown
 
 # Lock screen.
 super + x
-	i3lock --image ~/.config/lockscreen.png
+	i3lock --image ~/.config/lockscreen.png -p win
 
 super + shift + x
-	i3lock --image ~/.config/lockscreen.png && sleep 5 && xset dpms force off
+	i3lock --image ~/.config/lockscreen.png -p win && sleep 5 && xset dpms force off
 
 ################################################################
 ## MPD / MPC Bindings
