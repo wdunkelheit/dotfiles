@@ -52,19 +52,12 @@ preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 
 # Aliases
-
-## Aliases that are basically scripts
-### Git alias for dotfile use
-alias dotfiles='git --git-dir="$HOME/.local/dotfiles/" --work-tree=$HOME'
-alias dgua='git --git-dir="$HOME/.local/dotfiles/" --work-tree=$HOME remote | xargs -L1 git --git-dir="$HOME/.local/dotfiles/" --work-tree=$HOME push --all'
-
 # Aliases
 ## Package Management
 alias p="sudo pacman"
 alias y="yay"
 
 ## Shortcut Aliases
-alias g="git"
 alias v="vim"
 alias c="clear"
 alias q="exit"
@@ -77,14 +70,24 @@ alias neofetch="clear; neofetch"
 ## Startup Aliases
 alias startx="startx $XINITRC"
 
-## Command Aliases
+## Git Aliases
+alias g="git"
 alias gua="git remote | xargs -L1 git push --all"
+
+### Dotfiles Git Aliases
+alias dotfiles='git --git-dir="$HOME/.local/dotfiles/" --work-tree=$HOME'
+alias dgua='git --git-dir="$HOME/.local/dotfiles/" --work-tree=$HOME remote | xargs -L1 git --git-dir="$HOME/.local/dotfiles/" --work-tree=$HOME push --all'
 
 ## Colourful Aliases
 alias ls="ls -hN --color=auto --group-directories-first"
 alias la="ls -hNa --color=auto --group-directories-first"
 alias ll="ls -hNl --color=auto --group-directories-first"
 alias grep="grep --color=auto"
+
+## Interactive Mode
+alias cp="cp -i"
+alias mv="mv-i"
+alias rm="rm -i"
 
 ## Python Aliases - Only if python is present on the system.
 command -v python3 > /dev/null && alias py="python3"
