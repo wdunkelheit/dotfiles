@@ -5,7 +5,7 @@ mpd_host = localhost
 
 mpd_port = 6600
 
-mpd_music_dir = ~/Music
+mpd_music_dir = /media/music
 
 # Visualizer Settings
 visualizer_data_source = /tmp/mpd.fifo
@@ -15,6 +15,8 @@ visualizer_in_stereo = yes
 visualizer_type = spectrum
 visualizer_look = ▋▋
 visualizer_color = blue, cyan, green, yellow, magenta, red
+
+lyrics_directory = ~/.cache/lyrics
 
 ##### system encoding #####
 ##
