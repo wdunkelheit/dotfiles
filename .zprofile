@@ -17,6 +17,7 @@ export TERMINAL="terminator"
 export EDITOR="vim"
 export BROWSER="firefox"
 export READER="zathura"
+export PAGER="most"
 
 # XDG defaults
 export XDG_CONFIG_HOME="$HOME/.config"
