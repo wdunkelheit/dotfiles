@@ -29,6 +29,9 @@ pipewire & pipewire-pulse & pipewire-media-session &
 # Monero node
 monerod --detach --prune-blockchain --check-updates disabled --non-interactive --max-concurrency 2 &
 
+# Emacs server
+/usr/bin/emacs --daemon &
+
 # Desktop related
 picom &
 unclutter &

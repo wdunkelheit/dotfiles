@@ -87,7 +87,7 @@ alias grep="grep --color=auto"
 
 ## Interactive Mode
 alias cp="cp -i"
-alias mv="mv-i"
+alias mv="mv -i"
 alias rm="rm -i"
 
 ## Python Aliases - Only if python is present on the system.
