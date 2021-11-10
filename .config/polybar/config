@@ -383,7 +383,7 @@ format-underline = #4bafff
 
 [module/bitcoin]
 type = custom/script
-exec = curl -Ls "https://gbp.rate.sx/1btc" 2> /dev/null | cut -d "." -f1
+exec = bar-btc
 interval = 21600
 label = £%output%
 format-foreground = ${colors.foreground-alt}
@@ -392,7 +392,7 @@ format-underline = #ffd700
 
 [module/xmr]
 type = custom/script
-exec = curl -Ls "https://gbp.rate.sx/1xmr" 2> /dev/null | cut -d "." -f1
+exec = bar-xmr
 interval = 21600
 label = £%output%
 format-foreground = ${colors.foreground-alt}
