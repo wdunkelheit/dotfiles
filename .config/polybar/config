@@ -410,7 +410,7 @@ format-underline = #ff00aa
 [module/rss]
 type = custom/script
 exec = bar-rss
-interval = 10800
+interval = 21600
 format-foreground = ${colors.foreground-alt}
 format-prefix = "🔔 "
 format-underline = #ffaaaa
