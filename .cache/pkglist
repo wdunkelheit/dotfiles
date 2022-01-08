@@ -30,8 +30,6 @@ dialog
 dino
 dmenu
 dnsmasq
-docker
-docker-compose
 dosfstools
 dunst
 efibootmgr
@@ -78,7 +76,7 @@ intel-ucode
 iptables-nft
 isync
 jfsutils
-jre8-openjdk
+kdenlive
 keepassxc
 libreoffice-still
 libreoffice-still-en-gb
@@ -125,6 +123,7 @@ npm
 ntfs-3g
 obs-studio
 os-prober
+oxygen-icons
 p7zip
 pacman
 pacman-contrib
@@ -158,6 +157,7 @@ rust
 s-nail
 seahorse
 sed
+shellcheck
 snapper
 steam
 sudo
@@ -166,6 +166,7 @@ sxiv
 telegram-desktop
 terminator
 texinfo
+thunderbird
 tig
 tlp
 tlp-runit
