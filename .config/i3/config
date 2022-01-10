@@ -35,8 +35,11 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 # Floating windows
 # for_window [class="Pcmanfm" ] floating enable
 
+# Mouse focus
+focus_follows_mouse no
+
 # Set Gaps
-#gaps outer 5
+gaps inner 8
 
 # Remove title bar from all Windows - Can be overwritten for specific windows afterwards.
 for_window [class=".*"] border pixel 1
@@ -79,7 +82,7 @@ bindsym $mod+semicolon exec dmenu-emoji
 
 # Screenshot script
 bindsym Print exec maim "$HOME/pix/screenshots/screenshot-$(date '+%Y.%m.%d-%H:%M:%S').png" && notify-send "Screenshot saved" "$HOME/pix/screenshots/..."
-bindsym $mod+Print flameshot gui
+bindsym $mod+Print exec flameshot gui
 
 # File Manager
 bindsym $mod+e exec pcmanfm
@@ -139,7 +142,7 @@ bindsym $mod+f fullscreen toggle
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
-bindsym $mod+' layout toggle split
+bindsym $mod+shift+s layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
