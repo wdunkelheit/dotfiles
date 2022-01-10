@@ -52,7 +52,6 @@ flex
 gajim
 gawk
 gcc
-gedit
 gettext
 gimp
 git
@@ -68,6 +67,7 @@ gzip
 htop
 hugo
 hunspell-en_gb
+i3-gaps
 i3lock
 imlib2
 inetutils
@@ -97,6 +97,7 @@ man-pages
 marked
 mdadm
 monero-gui
+mousepad
 mpc
 mpd
 mpv
