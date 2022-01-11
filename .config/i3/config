@@ -39,7 +39,7 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 focus_follows_mouse no
 
 # Set Gaps
-gaps inner 8
+# gaps inner 8
 
 # Remove title bar from all Windows - Can be overwritten for specific windows afterwards.
 for_window [class=".*"] border pixel 1
@@ -101,11 +101,11 @@ bindsym $mod+shift+m exec pamixer --toggle-mute
 
 # mpd
 bindsym $mod+p exec mpc toggle
-bindsym XF86AudioPlay exec mpd toggle
-bindsym $mod+shift+greater exec mpd next
-bindsym XF86AudioNext exec mpd next
-bindsym $mod+shift+less exec mpd prev
-bindsym XF86AudioPrev exec mpd prev
+bindsym XF86AudioPlay exec mpc toggle
+bindsym $mod+shift+greater exec mpc next
+bindsym XF86AudioNext exec mpc next
+bindsym $mod+shift+less exec mpc prev
+bindsym XF86AudioPrev exec mpc prev
 
 # Touchpad / Thinkpad T440p
 bindsym $mod+Insert exec toggletouchpad.sh
