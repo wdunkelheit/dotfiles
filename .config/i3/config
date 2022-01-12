@@ -83,6 +83,7 @@ bindsym $mod+semicolon exec dmenu-emoji
 # Screenshot script
 bindsym Print exec maim "$HOME/pix/screenshots/screenshot-$(date '+%Y.%m.%d-%H:%M:%S').png" && notify-send "Screenshot saved" "$HOME/pix/screenshots/..."
 bindsym $mod+Print exec flameshot gui
+bindsym $mod+shift+s exec flameshot gui
 
 # File Manager
 bindsym $mod+e exec pcmanfm
@@ -142,7 +143,7 @@ bindsym $mod+f fullscreen toggle
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
-bindsym $mod+shift+s layout toggle split
+bindsym $mod+shift+v layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
