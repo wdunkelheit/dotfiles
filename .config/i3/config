@@ -42,7 +42,7 @@ focus_follows_mouse no
 # gaps inner 8
 
 # Remove title bar from all Windows - Can be overwritten for specific windows afterwards.
-for_window [class=".*"] border pixel 1
+for_window [class=".*"] border pixel 0
 
 # Window rules
 ## Browser

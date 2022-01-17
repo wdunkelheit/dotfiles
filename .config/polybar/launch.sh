@@ -7,9 +7,7 @@ killall -q polybar
 while pgrep -u $UID -x polybar >dev/null; do sleep 1; done
 
 # Launch Polybar
-# Check for hostname to get machine specific bar.
-[ $(hostname) = "Thunderbolt" ] && polybar monitor &
-[ ! $(hostname) = "Thunderbolt" ] && polybar mybar &
+polybar mybar
 
 echo "Polybar launched..."
 
