@@ -1,7 +1,10 @@
 #!/bin/bash
 
 # Kill all polybars
-killall -q polybar
+while [ "$(pgrep polybar)" ]
+	do
+		killall -q polybar
+	done
 
 # Wait until kill confirmed.
 while pgrep -u $UID -x polybar >dev/null; do sleep 1; done

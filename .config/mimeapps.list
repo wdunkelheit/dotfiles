@@ -17,6 +17,7 @@ application/x-extension-shtml=brave.desktop
 application/xhtml+xml=brave.desktop
 application/x-extension-xhtml=brave.desktop
 application/x-extension-xht=brave.desktop
+x-scheme-handler/tg=userapp-Telegram Desktop-KO1DG1.desktop
 
 [Added Associations]
 x-scheme-handler/http=brave.desktop;
@@ -29,3 +30,4 @@ application/x-extension-shtml=brave.desktop;
 application/xhtml+xml=brave.desktop;
 application/x-extension-xhtml=brave.desktop;
 application/x-extension-xht=brave.desktop;
+x-scheme-handler/tg=userapp-Telegram Desktop-KO1DG1.desktop;
