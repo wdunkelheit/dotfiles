@@ -31,3 +31,4 @@ application/xhtml+xml=brave.desktop;
 application/x-extension-xhtml=brave.desktop;
 application/x-extension-xht=brave.desktop;
 x-scheme-handler/tg=userapp-Telegram Desktop-KO1DG1.desktop;
+video/webm=brave-browser.desktop;
