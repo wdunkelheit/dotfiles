@@ -1,2 +1,13 @@
 #!/bin/sh
-BTC=$(curl -Ls "https://gbp.rate.sx/1btc" 2> /dev/null) && echo "$BTC" | cut -d "." -f1 || echo "N/A"
+#BTC=$(curl -Ls "https://gbp.rate.sx/1btc" 2> /dev/null) && echo "$BTC" | cut -d "." -f1 || echo "N/A"
+
+BTC=$(curl -Ls "https://gbp.rate.sx/1xmr") 2> /dev/null
+
+case $BTC in
+	*"DOCTYPE"*)
+		echo "ERROR"
+		;;
+	*) echo "$BTC" | cut -d "." -f1
+		;;
+esac
+

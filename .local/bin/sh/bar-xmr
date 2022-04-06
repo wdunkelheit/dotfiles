@@ -1,2 +1,13 @@
 #!/bin/sh
-XMR=$(curl -Ls "https://gbp.rate.sx/1xmr" 2> /dev/null) && echo "$XMR" | cut -d "." -f1 || echo "N/A"
+#XMR=$(curl -Ls "https://gbp.rate.sx/1xmr" 2> /dev/null) && echo "$XMR" | cut -d "." -f1 || echo "N/A"
+
+XMR=$(curl -Ls "https://gbp.rate.sx/1xmr") 2> /dev/null
+
+case $XMR in
+	*"DOCTYPE"*)
+		echo "ERROR"
+		;;
+	*) echo "$XMR" | cut -d "." -f1
+		;;
+esac
+
