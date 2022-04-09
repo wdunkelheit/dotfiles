@@ -7,7 +7,7 @@ case $BTC in
 	*"DOCTYPE"*)
 		echo "ERROR"
 		;;
-	*) echo "$BTC" | cut -d "." -f1
+	*) echo "£$BTC" | cut -d "." -f1
 		;;
 esac
 
