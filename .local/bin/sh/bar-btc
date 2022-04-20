@@ -7,6 +7,9 @@ case $BTC in
 	*"DOCTYPE"*)
 		echo "ERROR"
 		;;
+	*"<html>"*)
+		echo "ERROR"
+		;;
 	*) echo "£$BTC" | cut -d "." -f1
 		;;
 esac

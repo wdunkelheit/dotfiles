@@ -7,6 +7,9 @@ case $XMR in
 	*"DOCTYPE"*)
 		echo "ERROR"
 		;;
+	*"<html>"*)
+		echo "ERROR"
+		;;
 	*) echo "£$XMR" | cut -d "." -f1
 		;;
 esac
