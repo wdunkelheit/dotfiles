@@ -148,4 +148,5 @@ configuration {
 /*	me-accept-entry: "MouseDPrimary";*/
 /*	me-accept-custom: "Control+MouseDPrimary";*/
 }
-@import "/usr/share/rofi/themes/solarized_alternate.rasi"
+/* @theme "/usr/share/rofi/themes/Arc-Dark.rasi" */
+@theme "nord.rasi"
