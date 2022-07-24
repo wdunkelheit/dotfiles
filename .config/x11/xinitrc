@@ -3,7 +3,7 @@
 ## Display config per device
 # Check if HDMI is used, if so then disable laptop display and use HDMI at 1080p.
 xrandr | grep "HDMI-1 connected" && xrandr --output HDMI-1 --primary --mode 1920x1080 --rate 60 && xrandr --output eDP-1 --off
-xrandr | grep "DP-1 connected" && xrandr --output DP-1 --mode 1920x1080
+xrandr | grep "DP-1 connected" && xrandr --output DP-1 --mode 3840x2160 --scale 0.5
 
 ## Keyboard and input settings / config
 # Set keyboard layout to English-GB/UK
@@ -24,7 +24,9 @@ xset r rate 240 40
 nm-applet &
 blueman-applet &
 mullvad-vpn &
-pipewire & pipewire-pulse & pipewire-media-session &
+
+# Pipewire Audio, wireplumber and pulse session started via pipewire configuration exec.
+pipewire &
 
 # Monero node
 monerod --detach --prune-blockchain --check-updates disabled --non-interactive --max-concurrency 2 &

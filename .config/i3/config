@@ -57,6 +57,8 @@ assign [class="Dino"] $ws4
 assign [class="Gajim"] $ws4
 ## Office Suite
 assign [class="libreoffice-*"] $ws5
+## Mail Client
+assign [class="Thunderbird"] $ws5
 ## Steam
 assign [class="Steam"] $ws9
 
