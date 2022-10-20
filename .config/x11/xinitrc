@@ -18,6 +18,9 @@ xrdb -merge $XDG_CONFIG_HOME/x11/Xdefaults
 # Set keboard delay / rate:
 xset r rate 240 40
 
+# Start polkit manager
+lxpolkit &
+
 ## Launch daemons, rendering tools and applets.
 # Keys, tools and settings applets.
 # sxhkd &
@@ -29,7 +32,7 @@ mullvad-vpn &
 pipewire &
 
 # Monero node
-monerod --detach --prune-blockchain --check-updates disabled --non-interactive --max-concurrency 2 &
+# monerod --detach --prune-blockchain --check-updates disabled --non-interactive --max-concurrency 2 &
 
 # Emacs server
 /usr/bin/emacs --daemon &

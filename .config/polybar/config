@@ -18,7 +18,8 @@ foreground-alt = #e5e9f0
 primary = #8fbcbb
 secondary = #e60053
 battery = #bf616a
-batteryCharging = #a3be8c
+batteryFull = #a3be2c
+batteryCharging = #a3befc
 alert = #bd2c40
 
 [bar/mybar]
@@ -323,7 +324,7 @@ format-discharging = <label-discharging>
 format-discharging-underline = ${colors.battery}
 
 format-full-prefix = "🔋"
-format-full-prefix-foreground = ${colors.foreground-alt}
+format-full-prefix-foreground = ${colors.batteryFull}
 format-full-underline = ${self.format-charging-underline}
 
 [module/temperature]
