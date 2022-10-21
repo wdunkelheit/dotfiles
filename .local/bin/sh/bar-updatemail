@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Syncs mail then reports new mails in bar and notification
 

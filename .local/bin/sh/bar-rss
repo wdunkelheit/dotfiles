@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Syncs RSS feeds then reports new articles in bar and notification
 
@@ -6,7 +6,7 @@ notify-send "🔔 RSS syncing..."
 
 newsboat -x reload
 
-while [ $(pgrep newsboat) ]
+while [ "$(pgrep newsboat)" ]
 do
 	sleep 1
 done
