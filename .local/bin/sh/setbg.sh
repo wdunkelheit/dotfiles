@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 RESOLUTION="$(xdpyinfo | awk '/dimensions/{print $2}')"
 
 # Set background image of wallpaper.
@@ -15,7 +15,7 @@ setls() {
 setboth() { setbg "$1" && setls "$1" ;}
 
 # Help
-gethelp() { echo -e "setbg.sh help dialog\n-w\t- Sets background image.\n-l\t- Sets lockscreen image.\n-b\t- Sets both images.\n-h\t- Prints this help dialog." ;}
+gethelp() { echo "-e\t- setbg.sh help dialog\n-w\t- Sets background image.\n-l\t- Sets lockscreen image.\n-b\t- Sets both images.\n-h\t- Prints this help dialog." ;}
 
 # Operate on arguments.
 case "$1" in
