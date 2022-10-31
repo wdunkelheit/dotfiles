@@ -3,9 +3,9 @@ acpi_call
 acpilight
 alacritty
 alsa-utils
-amd-ucode
 arc-gtk-theme
 artix-archlinux-support
+audacity
 autoconf
 automake
 base
@@ -17,6 +17,7 @@ blueman
 bluez
 bluez-runit
 bluez-utils
+brave-bin
 bspwm
 clang
 cmake
@@ -25,6 +26,7 @@ cronie
 cronie-runit
 cryptsetup
 cups
+dash
 deluge-gtk
 dhcpcd
 dialog
@@ -63,6 +65,7 @@ gparted
 grep
 groff
 grub
+gtksourceview3
 gvfs-mtp
 gzip
 htop
@@ -73,6 +76,7 @@ i3lock
 imlib2
 inetutils
 inkscape
+intel-ucode
 iptables-nft
 isync
 jfsutils
@@ -80,6 +84,7 @@ kdenlive
 keepassxc
 libreoffice-still
 libreoffice-still-en-gb
+librewolf
 libtool
 libvirt
 libvirt-runit
@@ -88,6 +93,7 @@ linux-firmware
 linux-headers
 lvm2
 lxappearance
+lxsession-gtk3
 lynx
 m4
 maim
@@ -116,7 +122,6 @@ networkmanager-runit
 newsboat
 nicotine+
 nim
-nimble
 nmap
 noto-fonts-cjk
 noto-fonts-emoji
@@ -144,9 +149,8 @@ python-gpgme
 python-pip
 python-pywal
 python-qrcode
-qemu
-qemu-arch-extra
-qutebrowser
+qemu-desktop
+qemu-emulators-full
 ranger
 reflector
 reiserfsprogs
@@ -159,6 +163,7 @@ s-nail
 seahorse
 sed
 shellcheck
+snapper
 steam
 sudo
 svgcleaner
@@ -177,11 +182,10 @@ ttf-hack
 ttf-inconsolata
 ttf-joypixels
 ttf-linux-libertine
-ttf-nerd-fonts-symbols
+ttf-nerd-fonts-symbols-2048-em
 unclutter
 unrar
 unzip
-urlscan
 usbutils
 valgrind
 vi
@@ -192,6 +196,8 @@ w3m
 wget
 which
 wireguard-tools
+wireplumber
+wpa_supplicant
 xclip
 xdg-user-dirs
 xdg-utils
