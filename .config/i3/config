@@ -59,6 +59,7 @@ assign [class="Gajim"] $ws4
 assign [class="libreoffice-*"] $ws5
 ## Mail Client
 assign [class="Thunderbird"] $ws5
+assign [class="thunderbird"] $ws5
 ## Steam
 assign [class="Steam"] $ws9
 
