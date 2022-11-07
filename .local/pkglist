@@ -201,6 +201,7 @@ wpa_supplicant
 xclip
 xdg-user-dirs
 xdg-utils
+xdotool
 xfsprogs
 xorg-server
 xorg-xdpyinfo
