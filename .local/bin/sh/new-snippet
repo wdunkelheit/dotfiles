@@ -1,0 +1,11 @@
+#!/bin/sh
+
+BOOKMARK="$(xclip -o)"
+FILE="$HOME/.local/share/scripts/snippets"
+
+if grep -q "$BOOKMARK" "$FILE"; then
+	notify-send "Snippet Found" "Snippet already present in snippets file."
+else
+	notify-send "Snippet Added" "Snippet $BOOKMARK added to $FILE"
+	echo "$BOOKMARK" >> "$FILE"
+fi

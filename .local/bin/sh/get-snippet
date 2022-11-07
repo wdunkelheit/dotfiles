@@ -1,0 +1,2 @@
+#!/bin/sh
+xdotool type "$(grep -v '^#' ~/.local/share/scripts/snippets | rofi -dmenu -i -l 20 | cut -d' ' -f1)"

@@ -86,6 +86,10 @@ bindsym $mod+Tab exec rofi -show window
 # Emojis via dmenu
 bindsym $mod+semicolon exec dmenu-emoji
 
+# Snippets
+bindsym $mod+shift+b exec new-snippet
+bindsym $mod+Insert exec get-snippet
+
 # Screenshot script
 bindsym Print exec maim "$HOME/pix/screenshots/screenshot-$(date '+%Y.%m.%d-%H:%M:%S').png" && notify-send "Screenshot saved" "$HOME/pix/screenshots/..."
 bindsym $mod+Print exec flameshot gui
@@ -113,9 +117,6 @@ bindsym $mod+shift+greater exec mpc next
 bindsym XF86AudioNext exec mpc next
 bindsym $mod+shift+less exec mpc prev
 bindsym XF86AudioPrev exec mpc prev
-
-# Touchpad / Thinkpad T440p
-bindsym $mod+Insert exec toggletouchpad.sh
 
 # Lock Screen
 bindsym $mod+x exec i3lock --image ~/.config/lockscreen.png -p win
