@@ -30,7 +30,8 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 ##################
 
 # Startup Programs
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+#exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec --no-startup-id xfce4-panel --disable-wm-check
 
 # Floating windows
 # for_window [class="Pcmanfm" ] floating enable
@@ -39,7 +40,7 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 focus_follows_mouse no
 
 # Set Gaps
-# gaps inner 8
+gaps inner 8
 
 # Remove title bar from all Windows - Can be overwritten for specific windows afterwards.
 for_window [class=".*"] border pixel 0
@@ -59,9 +60,11 @@ assign [class="Gajim"] $ws4
 assign [class="libreoffice-*"] $ws5
 ## Mail Client
 assign [class="Thunderbird"] $ws5
-assign [class="thunderbird"] $ws5
+## Games
+assign [class="gamescope-wl"] $ws8
 ## Steam
 assign [class="Steam"] $ws9
+assign [class="steam"] $ws9
 
 #################
 ## KEYBINDINGS ##
