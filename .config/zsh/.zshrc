@@ -12,7 +12,7 @@ SAVEHIST=20000
 HISTFILE="$HOME/.cache/zhistory"
 
 # If not running interactively, don't do anything
-[[ $- != *i* ]] && return
+#[[ $- != *i* ]] && return
 
 # Auto completion. Allow auto-complete of hidden files (dots)
 autoload -U compinit
@@ -68,9 +68,6 @@ alias :q="exit"
 alias mkdir="mkdir -pv"
 alias neofetch="clear; neofetch"
 
-## Startup Aliases
-alias startx="startx $XINITRC"
-
 ## Git Aliases
 alias g="git"
 alias gua="git remote | xargs -L1 git push --all"
@@ -90,5 +87,3 @@ alias cp="cp -i"
 alias mv="mv -i"
 alias rm="rm -i"
 
-## Python Aliases - Only if python is present on the system.
-command -v python3 > /dev/null && alias py="python3"
