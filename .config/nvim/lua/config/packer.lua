@@ -7,6 +7,9 @@ return require('packer').startup(function(use)
 	-- Packer can manage itself
 	use 'wbthomason/packer.nvim'
 
+    -- Nord Colour Theme
+    use 'shaunsingh/nord.nvim'
+
 	-- Telescope plugin
 	use {
 		'nvim-telescope/telescope.nvim', tag = '0.1.3',
@@ -24,6 +27,7 @@ return require('packer').startup(function(use)
 	-- Fugitive
 	use('tpope/vim-fugitive')
 	-- LSP
+	use("williamboman/nvim-lsp-installer")
 	use {
 		'VonHeikemen/lsp-zero.nvim',
 		branch = 'v2.x',
