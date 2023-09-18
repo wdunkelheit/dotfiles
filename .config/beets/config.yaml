@@ -1,5 +1,5 @@
 # Directories
-directory: /media/music
+directory: /vol/Media/Music
 library: ~/.config/beets/musiclibrary.db
 
 #Plugins
