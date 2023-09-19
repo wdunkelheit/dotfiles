@@ -16,7 +16,7 @@ export PATH="$PATH:$HOME/.local/bin/sh"
 
 # Declare software defaults.
 export TERMINAL="terminator"
-export EDITOR="vim"
+export EDITOR="nvim"
 export BROWSER="brave"
 export READER="zathura"
 
@@ -34,10 +34,6 @@ export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 
 # Programming Languages
 export GOPATH="$HOME/.local/bin/go"
-
-# Vim config
-export MYVIMRC="$XDG_CONFIG_HOME/vim/.vimrc"
-export VIMINIT="source $MYVIMRC"
 
 # Disable history file for less
 export LESSHISTFILE="/dev/null"

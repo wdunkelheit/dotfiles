@@ -59,7 +59,8 @@ alias p="sudo pacman"
 alias y="yay"
 
 ## Shortcut Aliases
-alias v="vim"
+alias v="nvim"
+alias vim="nvim"
 alias c="clear"
 alias q="exit"
 alias :q="exit"
