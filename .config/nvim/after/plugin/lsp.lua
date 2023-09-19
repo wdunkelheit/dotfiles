@@ -8,6 +8,7 @@ lsp.ensure_installed({
     'eslint',
     'gopls',
     'rust_analyzer',
+    'taplo',
 })
 
 -- Fix Undefined global 'vim'
