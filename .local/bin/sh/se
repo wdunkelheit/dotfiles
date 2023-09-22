@@ -1,0 +1,4 @@
+#!/bin/bash
+
+du -a $HOME/.local/bin/sh | awk '{print $2}' | fzf | xargs -r $EDITOR
+
