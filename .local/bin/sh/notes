@@ -3,5 +3,5 @@
 # fd . instead of du piped to awk gives same result in one command
 # xargs delimiter changed to \n such that spaces can be interpreted corrected for file names
 
-fd . $HOME/Documents/Notes | fzf | xargs -d '\n' -r $EDITOR
+fd . $HOME/Documents/Notes -t f | fzf | xargs -d '\n' -r $EDITOR
 
