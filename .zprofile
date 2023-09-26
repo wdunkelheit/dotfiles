@@ -17,7 +17,7 @@ export PATH="$PATH:$HOME/.local/bin/sh"
 # Declare software defaults.
 export TERMINAL="terminator"
 export EDITOR="nvim"
-export BROWSER="brave"
+export BROWSER="firefox"
 export READER="zathura"
 
 # XDG defaults
@@ -26,6 +26,7 @@ export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
 
 # Config directories.
+export GNUPGHOME="$XDG_DATA_HOME/gnupg"
 export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc-2.0"
 export PASSWORD_STORE_DIR="$HOME/.local/password-store"
 #export XAUTHORITY="$XDG_DATA_HOME/Xauthority"
@@ -34,6 +35,10 @@ export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 
 # Programming Languages
 export GOPATH="$XDG_DATA_HOME/go"
+export GEM_PATH="$XDG_DATA_HOME/ruby/gems"
+export GEM_HOME="$XDG_DATA_HOME/ruby/gems"
+export GEM_SPEC_CACHE="$XDG_DATA_HOME/ruby/specs"
+export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
 
 # Disable history file for less
 export LESSHISTFILE="/dev/null"
