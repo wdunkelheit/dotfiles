@@ -33,7 +33,7 @@ export XINITRC="$XDG_CONFIG_HOME/x11/xinitrc"
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 
 # Programming Languages
-export GOPATH="$HOME/.local/bin/go"
+export GOPATH="$XDG_DATA_HOME/go"
 
 # Disable history file for less
 export LESSHISTFILE="/dev/null"
