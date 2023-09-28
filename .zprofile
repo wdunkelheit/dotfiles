@@ -35,10 +35,6 @@ export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 
 # Programming Languages
 export GOPATH="$XDG_DATA_HOME/go"
-export GEM_PATH="$XDG_DATA_HOME/ruby/gems"
-export GEM_HOME="$XDG_DATA_HOME/ruby/gems"
-export GEM_SPEC_CACHE="$XDG_DATA_HOME/ruby/specs"
-export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
 
 # Disable history file for less
 export LESSHISTFILE="/dev/null"
