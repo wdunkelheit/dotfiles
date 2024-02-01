@@ -1,0 +1,14 @@
+import = [ "~/.config/alacritty/catppuccin-macchiato.toml" ]
+
+[font]
+#size = 12
+
+[font.normal]
+family = "hack"
+
+[window]
+decorations = "none"
+
+[window.padding]
+x = 0
+y = 0
