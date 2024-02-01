@@ -82,7 +82,7 @@ bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec rofi -show run
-bindsym $mod+shift+d exec dmenu_run
+bindsym $mod+shift+d exec dmenu_run -fn "Hack:size=24"
 
 # Switch window with rofi
 bindsym $mod+Tab exec rofi -show window
