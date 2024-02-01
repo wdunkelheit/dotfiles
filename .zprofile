@@ -15,7 +15,7 @@ export PATH="$PATH:$HOME/.local/bin/sh"
 #export LC_ALL=en_GB.UTF-8
 
 # Declare software defaults.
-export TERMINAL="terminator"
+export TERMINAL="alacritty"
 export EDITOR="nvim"
 export BROWSER="firefox"
 export READER="zathura"
