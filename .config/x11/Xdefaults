@@ -2,6 +2,9 @@
 *.font: Monospace:size=12:antialias=true;
 !!*.alpha: 1
 
+!Cursor Size
+Xcursor.size: 32
+
 st.alpha: 1
 !! Xft font rendering config
 !!Xft.dpi: 192
@@ -19,6 +22,7 @@ Xft.lcdfilter: lcddefault
 
 ! Import Theme
 #include "themes/nord"
+
 
 ! Xclock colors.
 XClock*foreground: #a3c3e2
