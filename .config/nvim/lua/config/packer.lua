@@ -8,7 +8,7 @@ return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
 
     -- Nord Colour Theme
-    use 'shaunsingh/nord.nvim'
+    -- use 'shaunsingh/nord.nvim'
 
 	-- Telescope plugin
 	use {

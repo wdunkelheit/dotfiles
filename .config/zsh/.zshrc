@@ -60,6 +60,7 @@ alias y="yay"
 
 ## Shortcut Aliases
 alias v="nvim"
+alias nv="nvim"
 alias vim="nvim"
 alias c="clear"
 alias q="exit"
@@ -72,7 +73,6 @@ alias neofetch="clear; neofetch"
 ## Git Aliases
 alias g="git"
 alias gua="git remote | xargs -L1 git push --all"
-
 ### Dotfiles Git Aliases
 alias dotfiles='git --git-dir="$HOME/.local/dotfiles/" --work-tree=$HOME'
 alias dgua='git --git-dir="$HOME/.local/dotfiles/" --work-tree=$HOME remote | xargs -L1 git --git-dir="$HOME/.local/dotfiles/" --work-tree=$HOME push --all'
