@@ -29,7 +29,7 @@ blueman-applet &
 #mullvad-vpn &
 
 # Pipewire Audio, wireplumber and pulse session started via pipewire configuration exec.
-pipewire &
+#pipewire &
 
 # Monero node
 # monerod --detach --prune-blockchain --check-updates disabled --non-interactive --max-concurrency 2
