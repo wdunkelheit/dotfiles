@@ -100,7 +100,7 @@ bindsym $mod+Print exec flameshot gui
 bindsym $mod+shift+s exec flameshot gui
 
 # File Manager
-bindsym $mod+e exec pcmanfm
+bindsym $mod+e exec thunar
 
 # Brightness
 bindsym XF86MonBrightnessUp exec sudo xbacklight -inc 5

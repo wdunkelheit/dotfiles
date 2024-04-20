@@ -4,7 +4,8 @@ import = [ "~/.config/alacritty/catppuccin-macchiato.toml" ]
 size = 12
 
 [font.normal]
-family = "hack"
+#family = "hack"
+family = "Hack Nerd Font Mono"
 
 [window]
 decorations = "none"
