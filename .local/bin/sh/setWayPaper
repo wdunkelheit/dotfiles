@@ -1,0 +1,4 @@
+#!/bin/sh
+
+rm "$HOME/.config/wallpaper"
+ln "$1" "$HOME/.config/wallpaper"
