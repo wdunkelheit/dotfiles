@@ -23,34 +23,6 @@ tooltip {
     border-color: #11111b;
 }
 
-#workspaces {
-    background: @surface0;
-    border-radius: 0rem 1rem 1rem 0rem;
-    margin-left: 10px;
-    padding-right: 5px;
-    margin-right: 10px;
-    padding-left: 5px;
-}
-
-#workspaces button {
-    color: @lavender;
-    padding: 5px;
-    margin-right: 5px;
-}
-
-#workspaces button.active {
-    color: @sky;
-}
-
-#workspaces button.urgent {
-    color: @yellow;
-    background: @red;
-}
-
-#workspaces button:hover {
-    color: @pink;
-}
-
 #window,
 #clock,
 #battery,
@@ -116,5 +88,33 @@ tooltip {
 #tray {
     border-radius: 1rem;
     margin-right: 10px;
+}
+
+#workspaces {
+    background: @surface0;
+    border-radius: 0rem 1rem 1rem 0rem;
+    margin-left: 10px;
+    padding-right: 5px;
+    margin-right: 10px;
+    padding-left: 5px;
+}
+
+#workspaces button {
+    color: @lavender;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+#workspaces button.active {
+    color: @sky;
+}
+
+#workspaces button.urgent {
+    color: @yellow;
+    background: @red;
+}
+
+#workspaces button:hover {
+    color: @pink;
 }
 
