@@ -17,8 +17,14 @@ application/x-extension-shtml=firefox.desktop
 application/xhtml+xml=firefox.desktop
 application/x-extension-xhtml=firefox.desktop
 application/x-extension-xht=firefox.desktop
-x-scheme-handler/mailto=thunderbird.desktop;
+x-scheme-handler/mailto=userapp-Thunderbird-UA4MM2.desktop
 x-scheme-handler/nxm=modorganizer2-nxm-handler.desktop
+message/rfc822=userapp-Thunderbird-UA4MM2.desktop
+x-scheme-handler/mid=userapp-Thunderbird-UA4MM2.desktop
+x-scheme-handler/webcal=userapp-Thunderbird-NAFOM2.desktop
+text/calendar=userapp-Thunderbird-NAFOM2.desktop
+application/x-extension-ics=userapp-Thunderbird-NAFOM2.desktop
+x-scheme-handler/webcals=userapp-Thunderbird-NAFOM2.desktop
 
 [Added Associations]
 x-scheme-handler/http=firefox.desktop;
@@ -32,3 +38,7 @@ application/xhtml+xml=firefox.desktop;
 application/x-extension-xhtml=firefox.desktop;
 application/x-extension-xht=firefox.desktop;
 video/webm=mpv.desktop;
+x-scheme-handler/mailto=userapp-Thunderbird-UA4MM2.desktop;
+x-scheme-handler/mid=userapp-Thunderbird-UA4MM2.desktop;
+x-scheme-handler/webcal=userapp-Thunderbird-NAFOM2.desktop;
+x-scheme-handler/webcals=userapp-Thunderbird-NAFOM2.desktop;

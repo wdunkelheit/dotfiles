@@ -8,26 +8,26 @@
     "gtk-layer-shell": true,
     "modules-left": ["hyprland/workspaces"],
 //    "modules-center": ["hyprland/window"],
-    "modules-right": ["network", "temperature","battery","backlight","pulseaudio","pulseaudio#microphone","tray","clock"],
-    "hyprland/window": {
-        "format": "{}"
-    },
+"modules-right": ["network", "temperature","battery","backlight","pulseaudio","pulseaudio#microphone","tray","clock"],
+"hyprland/window": {
+    "format": "{}"
+},
 
-    "hyprland/workspaces": {
-        "format": "{icon}",
-        "on-click": "activate",
-        "format-icons": {
-            "1": "",
-            "2": "",
-            "3": "",
-            "4": "",
-            "5": "",
-            "9": "󰖺",
-            "0": "",
-            "default": ""
-        },
-        "sort-by-number": true
+"hyprland/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "format-icons": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+        "9": "󰖺",
+        "0": "",
+        "default": ""
     },
+    "sort-by-number": true
+},
 
 //    "hyprland/workspaces": {
 //        "format": "{icon}",

@@ -1,4 +1,5 @@
 @import "macchiato.css";
+
 * {
     border: none;
     border-radius: 0;
@@ -6,13 +7,6 @@
     font-weight: bold;
     font-size: 16px;
     min-height: 0;
-}
-
-window#waybar {
-    background: @surface0;
-    color: @text;
-    margin: 0;
-    padding: 0;
 }
 
 tooltip {
@@ -88,6 +82,13 @@ tooltip {
 #tray {
     border-radius: 1rem;
     margin-right: 10px;
+}
+
+window#waybar {
+    background: @surface0;
+    color: @text;
+    margin: 0;
+    padding: 0;
 }
 
 #workspaces {
