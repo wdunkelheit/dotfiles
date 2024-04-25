@@ -53,6 +53,7 @@ gamescope
 gcc
 gimp
 git
+gnome-keyring
 go
 go-tools
 gparted
@@ -206,6 +207,7 @@ wget
 which
 wireguard-tools
 wireplumber
+wl-clipboard
 wofi
 xclip
 xdg-desktop-portal-hyprland
