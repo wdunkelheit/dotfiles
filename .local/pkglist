@@ -38,6 +38,7 @@ dunst
 efibootmgr
 element-desktop
 emacs
+epiphany
 exfat-utils
 fakeroot
 fd
@@ -75,6 +76,8 @@ iptables-nft
 isync
 jfsutils
 keepassxc
+lib32-amdvlk
+lib32-vulkan-mesa-layers
 lib32-vulkan-radeon
 libreoffice-still
 libreoffice-still-en-gb
@@ -166,6 +169,7 @@ seahorse
 shellcheck
 signal-desktop
 slurp
+spotify-launcher
 steam
 sudo
 svgcleaner
@@ -194,6 +198,7 @@ unrar
 unzip
 urlscan
 usbutils
+uwufetch
 valgrind
 veracrypt
 vi

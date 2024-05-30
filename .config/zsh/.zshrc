@@ -83,3 +83,7 @@ alias la="ls -hNa --color=auto --group-directories-first"
 alias ll="ls -hNl --color=auto --group-directories-first"
 alias grep="grep --color=auto"
 
+## Workspace Aliases
+alias code="cd ~/Documents/Code"
+alias blog="cd ~/Documents/Code/hugo-dunkelheit.xyz"
+
