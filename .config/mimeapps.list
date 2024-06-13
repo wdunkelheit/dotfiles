@@ -42,3 +42,4 @@ x-scheme-handler/mailto=userapp-Thunderbird-UA4MM2.desktop;
 x-scheme-handler/mid=userapp-Thunderbird-UA4MM2.desktop;
 x-scheme-handler/webcal=userapp-Thunderbird-NAFOM2.desktop;
 x-scheme-handler/webcals=userapp-Thunderbird-NAFOM2.desktop;
+image/jpeg=gimp.desktop;brave-browser.desktop;feh.desktop;
