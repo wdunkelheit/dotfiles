@@ -62,6 +62,7 @@ alias y="yay"
 alias v="nvim"
 alias nv="nvim"
 alias vim="nvim"
+alias neovim="nvim"
 alias c="clear"
 alias q="exit"
 alias :q="exit"
@@ -69,13 +70,15 @@ alias :q="exit"
 ## Extended Aliases
 alias mkdir="mkdir -pv"
 alias neofetch="clear; neofetch"
+alias uwufetch="clear; uwufetch"
 
 ## Git Aliases
 alias g="git"
-alias gua="git remote | xargs -L1 git push --all"
+alias gua="eval $(ssh-agent -s) && git remote | xargs -L1 git push --all && ssh-agent -k"
+
 ### Dotfiles Git Aliases
 alias dotfiles='git --git-dir="$HOME/.local/dotfiles/" --work-tree=$HOME'
-alias dgua='git --git-dir="$HOME/.local/dotfiles/" --work-tree=$HOME remote | xargs -L1 git --git-dir="$HOME/.local/dotfiles/" --work-tree=$HOME push --all'
+alias dgua='eval $(ssh-agent -s) && git --git-dir="$HOME/.local/dotfiles/" --work-tree=$HOME remote | xargs -L1 git --git-dir="$HOME/.local/dotfiles/" --work-tree=$HOME push --all && ssh-agent -k'
 
 ## Colourful Aliases
 alias ls="ls -hN --color=auto --group-directories-first"
@@ -85,5 +88,5 @@ alias grep="grep --color=auto"
 
 ## Workspace Aliases
 alias code="cd ~/Documents/Code"
-alias blog="cd ~/Documents/Code/hugo-dunkelheit.xyz"
+alias blog="cd ~/Documents/Code/hugo-hs"
 
