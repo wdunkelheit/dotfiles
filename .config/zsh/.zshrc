@@ -53,7 +53,6 @@ preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 
 # Aliases
-# Aliases
 ## Package Management
 alias p="sudo pacman"
 alias y="yay"
@@ -66,6 +65,7 @@ alias neovim="nvim"
 alias c="clear"
 alias q="exit"
 alias :q="exit"
+alias hypr="hyprland"
 
 ## Extended Aliases
 alias mkdir="mkdir -pv"
