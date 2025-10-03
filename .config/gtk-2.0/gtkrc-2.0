@@ -4,13 +4,13 @@
 include "/home/william/.gtkrc-2.0.mine"
 gtk-theme-name="catppuccin-macchiato-sapphire-standard+default"
 gtk-icon-theme-name="Papirus-Dark"
-gtk-font-name="Serif 13"
-gtk-cursor-theme-name="Adwaita"
+gtk-font-name="Noto Sans,  13"
+gtk-cursor-theme-name="Breeze-Light"
 gtk-cursor-theme-size=24
-gtk-toolbar-style=GTK_TOOLBAR_BOTH
+gtk-toolbar-style=3
 gtk-toolbar-icon-size=GTK_ICON_SIZE_LARGE_TOOLBAR
-gtk-button-images=1
-gtk-menu-images=1
+gtk-button-images=0
+gtk-menu-images=0
 gtk-enable-event-sounds=1
 gtk-enable-input-feedback-sounds=0
 gtk-xft-antialias=1
