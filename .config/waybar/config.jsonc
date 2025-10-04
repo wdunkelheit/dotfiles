@@ -151,10 +151,10 @@
 },
 
 "mpd": {
-    "format": " {artist} - {title}",
-    "format-paused": " {artist} - {title}",
+    "format": " {title} - {artist}",
+    "format-paused": " {title} - {artist}",
     "format-stopped": "MPD stopped",
-    "max-length": 30,
+    "max-length": 48,
     "tooltip": false,
     "interval": 5
 }
