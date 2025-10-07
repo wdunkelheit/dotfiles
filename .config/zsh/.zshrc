@@ -89,4 +89,5 @@ alias grep="grep --color=auto"
 ## Workspace Aliases
 alias code="cd ~/Documents/Code"
 alias blog="cd ~/Documents/Code/hugo-hs"
+alias hyprvim="vim ~/.config/hypr/hyprland.conf"
 

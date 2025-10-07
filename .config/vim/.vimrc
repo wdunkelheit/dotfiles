@@ -34,3 +34,4 @@ autocmd FileType html setl tabstop=4| setl shiftwidth=4| setl softtabstop=4| set
 autocmd FileType css setl tabstop=4| setl shiftwidth=4| setl softtabstop=4
 autocmd FileType c setl tabstop=4| setl shiftwidth=4| setl softtabstop=4
 
+set undodir=~/.local/share/vim/undodir

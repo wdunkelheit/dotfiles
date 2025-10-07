@@ -35,6 +35,12 @@ export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 
 # Programming Languages
 export GOPATH="$XDG_DATA_HOME/go"
+export CARGO_HOME="$HOME/.local/share/cargo"
+export RUSTUP_HOME="$HOME/.local/share/rustup"
+export YARN_CACHE_FOLDER="$XDG_CACHE_HOME/yarn"
+export YARN_CONFIG_DIR="$XDG_CONFIG_HOME/yarn"
+export npm_config_cache="$HOME/.local/share/npm"
+
 
 # Disable history file for less
 export LESSHISTFILE="/dev/null"
