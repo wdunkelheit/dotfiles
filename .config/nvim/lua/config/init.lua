@@ -3,7 +3,8 @@ require("config.set")
 require("config.packer")
 
 vim.lsp.enable('gopls')
-vim.cmd[[colorscheme nord]]
+-- vim.cmd[[colorscheme nord]]
+vim.cmd[[colorscheme catppuccin-macchiato]]
 
 -- Move Undodir
 local undodir = vim.fn.expand("~/.local/share/vim/undodir")
