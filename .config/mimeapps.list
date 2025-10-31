@@ -29,7 +29,7 @@ image/gif=org.kde.gwenview.desktop;
 image/heif=org.kde.koko.desktop;
 image/jpeg=org.kde.koko.desktop;gimp.desktop;feh.desktop;
 image/png=org.kde.koko.desktop;
-image/webp=org.kde.koko.desktop;
+image/webp=gimp.desktop;org.kde.koko.desktop;
 image/x-icns=org.kde.koko.desktop;
 inode/directory=thunar.desktop
 text/css=nvim.desktop;
@@ -68,8 +68,9 @@ x-scheme-handler/mailto=org.mozilla.Thunderbird.desktop;userapp-Thunderbird-UA4M
 x-scheme-handler/mid=userapp-Thunderbird-UA4MM2.desktop;
 x-scheme-handler/webcal=userapp-Thunderbird-NAFOM2.desktop;
 x-scheme-handler/webcals=userapp-Thunderbird-NAFOM2.desktop;
-x-scheme-handler/nxm=modorganizer2-nxm-handler.desktop
 x-scheme-handler/bitwarden=bitwarden.desktop;Bitwarden.desktop;
+application/x-bat=nvim.desktop;
+application/x-shellscript=nvim.desktop;
 
 [Default Applications]
 application/json=nvim.desktop;
@@ -151,5 +152,5 @@ x-scheme-handler/mid=userapp-Thunderbird-UA4MM2.desktop
 x-scheme-handler/tonsite=org.telegram.desktop.desktop
 x-scheme-handler/webcal=userapp-Thunderbird-NAFOM2.desktop
 x-scheme-handler/webcals=userapp-Thunderbird-NAFOM2.desktop
-x-scheme-handler/nxm=modorganizer2-nxm-handler.desktop
 x-scheme-handler/bitwarden=bitwarden.desktop
+x-scheme-handler/nxm=modorganizer2-nxm-handler.desktop
