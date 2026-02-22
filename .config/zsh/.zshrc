@@ -65,10 +65,11 @@ alias neovim="nvim"
 alias c="clear"
 alias q="exit"
 alias :q="exit"
-alias hypr="hyprland"
+alias hypr="start-hyprland"
 
 ## Extended Aliases
 alias mkdir="mkdir -pv"
+alias df="df -h"
 alias neofetch="clear; neofetch"
 alias uwufetch="clear; uwufetch"
 
@@ -88,6 +89,6 @@ alias grep="grep --color=auto"
 
 ## Workspace Aliases
 alias code="cd ~/Documents/Code"
-alias blog="cd ~/Documents/Code/hugo-hs"
+alias blog="cd ~/Documents/Code/hugo-dunkelheit.xyz"
 alias hyprvim="vim ~/.config/hypr/hyprland.conf"
 

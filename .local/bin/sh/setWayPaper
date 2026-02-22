@@ -2,3 +2,4 @@
 
 rm "$HOME/.config/wallpaper"
 ln "$1" "$HOME/.config/wallpaper"
+hyprctl reload
