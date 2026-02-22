@@ -75,11 +75,11 @@ alias uwufetch="clear; uwufetch"
 
 ## Git Aliases
 alias g="git"
-alias gua="eval $(ssh-agent -s) && git remote | xargs -L1 git push --all && ssh-agent -k"
+alias gua="eval \$(ssh-agent -s) && git remote | xargs -L1 git push --all && ssh-agent -k"
 
 ### Dotfiles Git Aliases
 alias dotfiles='git --git-dir="$HOME/.local/dotfiles/" --work-tree=$HOME'
-alias dgua='eval $(ssh-agent -s) && git --git-dir="$HOME/.local/dotfiles/" --work-tree=$HOME remote | xargs -L1 git --git-dir="$HOME/.local/dotfiles/" --work-tree=$HOME push --all && ssh-agent -k'
+alias dgua='eval \$(ssh-agent -s) && git --git-dir="$HOME/.local/dotfiles/" --work-tree=$HOME remote | xargs -L1 git --git-dir="$HOME/.local/dotfiles/" --work-tree=$HOME push --all && ssh-agent -k'
 
 ## Colourful Aliases
 alias ls="ls -hN --color=auto --group-directories-first"
