@@ -19,8 +19,10 @@ return require('packer').startup(function(use)
     }
 
     -- TreeSitter
-    use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'})
-    use('nvim-treesitter/playground')
+    use {
+        'nvim-treesitter/nvim-treesitter', 
+        run = ':TSUpdate'
+    }
     -- Harpoon
     use('theprimeagen/harpoon')
     -- Undo Tree
