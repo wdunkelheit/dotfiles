@@ -55,8 +55,7 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Aliases
 ## Package Management
-alias p="sudo pacman"
-alias y="yay"
+alias zypper="sudo zypper"
 
 ## Shortcut Aliases
 alias v="nvim"
