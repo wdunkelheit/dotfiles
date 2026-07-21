@@ -56,6 +56,7 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Aliases
 ## Package Management
 alias zypper="sudo zypper"
+alias dnf="sudo dnf"
 
 ## Shortcut Aliases
 alias v="nvim"
@@ -90,6 +91,6 @@ alias grep="grep --color=auto"
 
 ## Workspace Aliases
 alias code="cd ~/Documents/Code"
-alias blog="cd ~/Documents/Code/hugo-dunkelheit.xyz"
+alias blog="cd ~/Documents/Code/Web/hugo-dunkelheit.xyz"
 alias hyprvim="vim ~/.config/hypr/hyprland.conf"
 
